@@ -1,0 +1,17 @@
+[package]
+name = "etcs_proto"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+binary-layout = { version = "3.1.3", default-features = false }
+bolero-generator = "0.9.1"
+
+[features]
+default = ["std"]
+std = ["binary-layout/std"]
+
+[dev-dependencies]
+bolero = "0.9.0"
